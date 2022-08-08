@@ -15,8 +15,8 @@ AutoReq:       false
 
 %define themename1 lomiri-notifications
 %define themename2 lomiri-ringtones
-%define themedir1 %{_datadir}/sounds/%{themename}1
-%define themedir2 %{_datadir}/sounds/%{themename}2
+%define themedir1 %{_datadir}/sounds/%{themename1}
+%define themedir2 %{_datadir}/sounds/%{themename2}
 %define stereodir1 %{themedir1}/stereo
 %define stereodir2 %{themedir2}/stereo
 
@@ -38,13 +38,15 @@ Lomiri Ringtones from Ububtu Touch
 %prep
 %setup -q -n %{name}-%{version}/upstream
 
+%build
+
 %install
 install -D -m 644 %{SOURCE11} %{buildroot}%{themedir1}/stereo.index
 install -D -m 644 %{SOURCE12} %{buildroot}%{themedir1}/index.theme
 pushd share/sounds/lomiri/notifications/
 for f in *.ogg
 do
-    install -D -m 644 $f %{buildroot}%{stereodir1}/$f
+    install -D -m 644 "$f" %{buildroot}%{stereodir1}/"$f"
 done
 popd
 
@@ -53,11 +55,9 @@ install -D -m 644 %{SOURCE22} %{buildroot}%{themedir2}/index.theme
 pushd share/sounds/lomiri/ringtones/
 for f in *.ogg
 do
-    install -D -m 644 $f %{buildroot}%{stereodir2}/$f
+    install -D -m 644 "$f" %{buildroot}%{stereodir2}/"$f"
 done
 popd
-
-%build
 
 %files notifications
 %doc README.md
