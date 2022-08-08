@@ -1,7 +1,9 @@
 Name:          lomiri-sound-theme
 Version:       22.02
 Release:       1
-License: CC-BY-3.0 and CC-BY-4.0 and CC-BY-SA-3.0 and CC0-1.0
+# see upstream/debian/copyright
+#License: CC-BY-3.0 and CC-BY-4.0 and CC-BY-SA-3.0 and CC0-1.0
+License: CC-BY and CC-BY-SA and CC0
 Group:         Unspecified
 Summary:       Lomiri (Ubuntu Touch) sound theme
 URL:           https://github.com/ubports/ubuntu-touch-sounds
