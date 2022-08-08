@@ -6,12 +6,12 @@ Release:       1
 License: CC-BY and CC-BY-SA and CC0
 Group:         Unspecified
 Summary:       Lomiri (Ubuntu Touch) sound theme
-URL:           https://github.com/ubports/ubuntu-touch-sounds
+URL:           https://gitlab.com/ubports/development/core/lomiri-sounds
 Source0:       %{name}-%{version}.tar.gz
-Source11:       stereo.index_n
-Source12:       index.theme_n
-Source21:       stereo.index_r
-Source22:       index.theme_r
+Source11:      stereo.index_n
+Source12:      index.theme_n
+Source21:      stereo.index_r
+Source22:      index.theme_r
 BuildArch:     noarch
 AutoReq:       false
 
@@ -23,7 +23,7 @@ AutoReq:       false
 %define stereodir2 %{themedir2}/stereo
 
 %description
-Lomiri Sounds from Ububtu Touch
+Lomiri Sounds from Ubuntu Touch
 
 %package notifications
 Summary:       Lomiri (Ubuntu Touch) Notification sounds
@@ -32,10 +32,10 @@ Summary:       Lomiri (Ubuntu Touch) Notification sounds
 Summary:       Lomiri (Ubuntu Touch) Ringtones
 
 %description notifications
-Lomiri Notification Sounds from Ububtu Touch
+Lomiri Notification Sounds from Ubuntu Touch
 
 %description ringtones
-Lomiri Ringtones from Ububtu Touch
+Lomiri Ringtones from Ubuntu Touch
 
 %prep
 %setup -q -n %{name}-%{version}/upstream
