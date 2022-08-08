@@ -6,10 +6,10 @@ Group:         Unspecified
 Summary:       Lomiri (Ubuntu Touch) sound theme
 URL:           https://github.com/ubports/ubuntu-touch-sounds
 Source0:       %{name}-%{version}.tar.gz
-Source1:       stereo.index_n
-Source2:       index.theme_n
-Source3:       stereo.index_r
-Source4:       index.theme_r
+Source11:       stereo.index_n
+Source12:       index.theme_n
+Source21:       stereo.index_r
+Source22:       index.theme_r
 BuildArch:     noarch
 AutoReq:       false
 
@@ -39,9 +39,8 @@ Lomiri Ringtones from Ububtu Touch
 %setup -q -n %{name}-%{version}/upstream
 
 %install
-install -D -m 644 %{themename1}/index.theme %{buildroot}%{themedir1}/index.theme
-install -D -m 644 %{SOURCE1} %{buildroot}%{themedir1}/stereo.index
-install -D -m 644 %{SOURCE2} %{buildroot}%{themedir1}/index.theme
+install -D -m 644 %{SOURCE11} %{buildroot}%{themedir1}/stereo.index
+install -D -m 644 %{SOURCE12} %{buildroot}%{themedir1}/index.theme
 pushd share/sounds/lomiri/notifications/
 for f in *.ogg
 do
@@ -49,9 +48,8 @@ do
 done
 popd
 
-install -D -m 644 %{themename2}/index.theme %{buildroot}%{themedir2}/index.theme
-install -D -m 644 %{SOURCE3} %{buildroot}%{themedir2}/stereo.index
-install -D -m 644 %{SOURCE4} %{buildroot}%{themedir2}/index.theme
+install -D -m 644 %{SOURCE21} %{buildroot}%{themedir2}/stereo.index
+install -D -m 644 %{SOURCE22} %{buildroot}%{themedir2}/index.theme
 pushd share/sounds/lomiri/ringtones/
 for f in *.ogg
 do
