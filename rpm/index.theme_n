@@ -1,0 +1,6 @@
+[Sound Theme]
+Name=Lomiri Notifications
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo

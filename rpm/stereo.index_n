@@ -1,0 +1,18 @@
+{
+    "files": [
+    { "fileName": "A440.ogg",                       "displayName": "Lomiri A440" },
+    { "fileName": "Amsterdam.ogg",                  "displayName": "Lomiri Amsterdam" },
+    { "fileName": "Blip.ogg",                       "displayName": "Lomiri Blip" },
+    { "fileName": "Ede.ogg",                        "displayName": "Lomiri Ede" },
+    { "fileName": "Mallet.ogg",                     "displayName": "Lomiri Mallet" },
+    { "fileName": "Noti Karinding.ogg",             "displayName": "Lomiri Noti Karinding" },
+    { "fileName": "Positive.ogg",                   "displayName": "Lomiri Positive" },
+    { "fileName": "Rhodes.ogg",                     "displayName": "Lomiri Rhodes" },
+    { "fileName": "Sintesis.ogg",                   "displayName": "Lomiri Sintesis" },
+    { "fileName": "Sintonia.ogg",                   "displayName": "Lomiri Sintonia" },
+    { "fileName": "Slick.ogg",                      "displayName": "Lomiri Slick" },
+    { "fileName": "Soft delay.ogg",                 "displayName": "Lomiri Soft delay" },
+    { "fileName": "Xylo.ogg",                       "displayName": "Lomiri Xylo" }
+    ],
+    "translationCatalog": "lomiri-sound-theme"
+}
